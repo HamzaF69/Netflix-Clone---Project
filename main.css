@@ -35,7 +35,8 @@ main {
 }
 
 .logo {
-    width: 110px;
+    cursor: pointer;
+    width: 140px;
     filter: brightness(2);
     position: relative;
     z-index: 10;
@@ -89,10 +90,6 @@ button {
     z-index: 22;
 }
 
-.maintext::selection {
-    color: red;
-    background-color: rgba(0, 0, 0, 0.781);
-}
 
 .text1 {
     font-size: 48px;
@@ -144,12 +141,12 @@ button {
     background-color: black;
 }
 
-/* button:hover{
+button:hover{
     transition: all 1s;
     color: red;
     border: 0.5px solid rgb(174, 2, 2);
     background-color: black;
-} */
+}
 
 .line {
     position: absolute;
@@ -176,7 +173,14 @@ button {
     position: relative;
 }
 
+@media screen and (max-width:1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+
 .tv-container {
+    display: flex;
     position: relative;
     width: 79vw;
     z-index: 10;
@@ -207,6 +211,8 @@ button {
 }
 
 .first>div :first-child {
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 48px;
     font-weight: bolder;
 }
@@ -297,50 +303,98 @@ p {
 }
 
 @media only screen and (max-width: 455px) {
-  footer {
-    font-size: 14px;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px;
-    gap: 10px;
-    justify-items: start;
-    padding: 20px;
-  }
+    footer {
+        font-size: 14px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px;
+        gap: 10px;
+        justify-items: start;
+        padding: 20px;
+    }
 
-  a, p, .pak {
-    grid-column: auto;
-    color: rgb(167, 166, 166);
-  }
+    a,
+    p,
+    .pak {
+        grid-column: auto;
+        color: rgb(167, 166, 166);
+    }
 
-  p {
-    grid-column: span 2;
-  }
+    p {
+        grid-column: span 2;
+    }
 
-  .pak {
-    grid-column: span 2;
-  }
+    .pak {
+        grid-column: span 2;
+    }
 }
+
+@media screen and (max-width:1300px) {
+    .text1 {
+        font-size: 32px;
+        font-weight: 900;
+    }
+
+    .text2 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .text3 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+
+.maintext::selection {
+    color: red;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+
 @media only screen and (max-width: 912px) {
-  footer {
-    font-size: 14px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px;
+    footer {
+        font-size: 14px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px;
+        gap: 10px;
+        justify-items: start;
+        padding: 20px;
+    }
+
+    a,
+    p,
+    .pak {
+        grid-column: auto;
+        color: rgb(167, 166, 166);
+    }
+    
+    p {
+        grid-column: span 3;
+    }
+
+    .pak {
+        grid-column: span 3;
+    }
+}
+
+@media screen and (max-width:1300px ) {
+    nav {
+    height: 60px;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+}
+
+.email2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
-    justify-items: start;
-    padding: 20px;
-  }
-
-  a, p, .pak {
-    grid-column: auto;
-    color: rgb(167, 166, 166);
-  }
-
-  p {
-    grid-column: span 3;
-  }
-
-  .pak {
-    grid-column: span 3;
-  }
+    flex-wrap: wrap;
 }
