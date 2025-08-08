@@ -1,0 +1,346 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1280,h_720,q_75,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZjU2MmFhZjQtNWRiYi00NjAzLWEzMmItNmVmNmMyMjMwMTM2XC9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LOYKSxIDqfPwWHR0SSJ-ugGQ6bECF0yO6Cmc0F26CQs");
+    height: 70vh;
+    width: 100vw;
+    background-size: max(1200px, 100vw);
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+}
+
+.box {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.63;
+    background-color: black;
+}
+
+.text1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    width: 110px;
+    filter: brightness(2);
+    position: relative;
+    z-index: 10;
+}
+
+nav {
+    height: 60px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 4px;
+    width: 90px;
+    height: 30px;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    position: relative;
+    z-index: 12;
+    font-weight: 400;
+}
+
+.lang {
+    background-color: rgba(0, 0, 0, 0.375);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.286);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+.maintext {
+    font-family: "Martel Sans", sans-serif;
+    /* font-weight: 200;
+    font-style: normal; */
+    height: calc(100% - 62px);
+    display: flex;
+    gap: 20px;
+    padding: 0px 29px;
+    text-align: center;
+    top: 65px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    z-index: 22;
+}
+
+.maintext::selection {
+    color: red;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+.text1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.text2 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.text3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.gs {
+    background-color: red;
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 8px;
+    border: 0px;
+    height: 40px;
+    width: 140px;
+    border-radius: 5px;
+}
+
+.email {
+    position: relative;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.484);
+    height: 40px;
+    width: 190px;
+    background-color: rgba(0, 0, 0, 0.375);
+    border-radius: 5px;
+    padding: 2px 14px 4px 5px;
+    z-index: 33;
+    font-weight: 600;
+    color: rgb(221, 221, 221);
+
+}
+
+.gs:hover {
+    transition: all 1s;
+    color: red;
+    border: 0.5px solid rgb(174, 2, 2);
+    background-color: black;
+}
+
+/* button:hover{
+    transition: all 1s;
+    color: red;
+    border: 0.5px solid rgb(174, 2, 2);
+    background-color: black;
+} */
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #474646;
+    z-index: 5;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(to right, red, blue);
+    border-radius: 70%;
+}
+
+.first {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 30px;
+    margin: auto;
+    max-width: 70vw;
+    position: relative;
+}
+
+.tv-container {
+    position: relative;
+    width: 79vw;
+    z-index: 10;
+}
+
+.tv {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 11;
+}
+
+.tvVid {
+    position: absolute;
+    top: 19.5%;
+    left: 13.5%;
+    width: 73%;
+    height: 66%;
+    z-index: 1;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.first div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first>div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.line2 {
+    width: 100%;
+    height: 7px;
+    background-color: #474646;
+    margin-top: 40px;
+}
+
+.download {
+    position: relative;
+    height: auto;
+    width: 90%;
+}
+
+.faq {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 34px;
+    color: white;
+}
+
+.faq h1 {
+    text-align: center;
+}
+
+.boxfaq {
+    font-weight: 100;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    background-color: rgb(69, 69, 69);
+    padding: 24px;
+    max-width: 61vw;
+    margin: 14px auto;
+    justify-content: space-between;
+    line-height: 20px;
+    border-radius: 4px;
+}
+
+.boxfaq span:nth-child(2) {
+    font-size: 23px;
+    color: black;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.boxfaq:hover {
+    transition: all 0.65s;
+    background-color: rgb(131, 131, 131);
+}
+
+footer {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+
+a {
+    color: rgb(167, 166, 166);
+}
+
+p {
+    padding-top: 20px;
+    grid-column: 1/5;
+    color: rgb(167, 166, 166);
+}
+
+.pak {
+    grid-column: 1/5;
+    color: rgb(167, 166, 166);
+}
+
+@media only screen and (max-width: 455px) {
+  footer {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px;
+    gap: 10px;
+    justify-items: start;
+    padding: 20px;
+  }
+
+  a, p, .pak {
+    grid-column: auto;
+    color: rgb(167, 166, 166);
+  }
+
+  p {
+    grid-column: span 2;
+  }
+
+  .pak {
+    grid-column: span 2;
+  }
+}
+@media only screen and (max-width: 912px) {
+  footer {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px;
+    gap: 10px;
+    justify-items: start;
+    padding: 20px;
+  }
+
+  a, p, .pak {
+    grid-column: auto;
+    color: rgb(167, 166, 166);
+  }
+
+  p {
+    grid-column: span 3;
+  }
+
+  .pak {
+    grid-column: span 3;
+  }
+}
